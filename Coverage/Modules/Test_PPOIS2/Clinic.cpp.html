@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta charset="utf-8"/>
+	    <title>Clinic.cpp</title>
+	    <link href="../../third-party/google-code-prettify/prettify-CppCoverage.css" type="text/css" rel="stylesheet" />
+	    <script type="text/javascript" src="../../third-party/google-code-prettify/prettify.js"></script>
+	</head>
+    <body onload="prettyPrint()">
+        <h4></h4>
+        <pre class="prettyprint lang-cpp linenums">
+#include "pch.h"
+#include "Clinic.h"
+
+Clinic::Clinic(string name_clin, string name_reg, string surname_reg, int age_reg, double salary_reg,
+	string name_ph, string surname_ph, int age_ph, double salary_ph)
+<span style = "background-color:#dfd">	: name_of_clinik(name_clin) {
+	registry = new Registry(name_reg, surname_reg, age_reg, salary_reg);
+	pharm = new Pharmacy(name_ph, surname_ph, age_ph, salary_ph);
+}</span>
+
+<span style = "background-color:#dfd">Clinic::~Clinic() {
+	delete registry; 
+	delete pharm;
+}</span>
+
+<span style = "background-color:#dfd">void Clinic::show_all_doctors(){
+	for (auto &amp;doc : doctors){
+		doc-&gt;info();
+		cout &lt;&lt; endl;
+	}
+}</span>
+
+<span style = "background-color:#dfd">void Clinic::show_all_patients() {
+	for (auto  &amp;patient : patients) {
+		patient-&gt;info();
+		cout &lt;&lt; endl;
+	}
+}</span>
+
+<span style = "background-color:#dfd">void Clinic::show_all_nurses() {
+	for (auto&amp; nurse : nurses) {
+		nurse-&gt;info();
+		cout &lt;&lt; endl;
+	}
+}</span>
+
+<span style = "background-color:#dfd">void Clinic::show_all_rooms() {
+	for (auto&amp; room : rooms) {
+		room-&gt;info();
+		cout &lt;&lt; endl;
+	}
+}</span>
+
+<span style = "background-color:#dfd">void Clinic::show_all_appointments() {
+	for (auto&amp; app : appointments) {
+		app-&gt;info();
+		cout &lt;&lt; endl;
+	}
+}</span>
+
+<span style = "background-color:#dfd">void Clinic::show_all_prescriptions() {
+	for (auto rec : registry-&gt;records) {</span>
+<span style = "background-color:#fdd">		rec-&gt;check_history();
+	}</span>
+<span style = "background-color:#dfd">}</span>
+
+<span style = "background-color:#dfd">void Clinic::add_doctor(Doctor* doctor) {
+	doctors.push_back(doctor);
+}
+void Clinic::add_patient(Patient* patient) {
+	for (auto pat : patients) {
+		if (pat == patient) return;
+	}
+	patients.push_back(patient);
+}
+void Clinic::add_nurse(Nurse* nurse) {
+	nurses.push_back(nurse);
+}
+void Clinic::add_room(Room* room) {
+	rooms.push_back(room);
+}</span>
+
+<span style = "background-color:#dfd">Doctor* Clinic::get_doctor(string name, string surname) {
+	for (auto doc : doctors) {
+		if (doc-&gt;get_name() == name &amp;&amp; doc-&gt;get_surname() == surname) {
+			return doc;</span>
+		}
+<span style = "background-color:#dfd">	}</span>
+<span style = "background-color:#fdd">	cout &lt;&lt; "Òàêîãî âðà÷à íåò" &lt;&lt; endl;
+	return nullptr;</span>
+<span style = "background-color:#dfd">}</span>
+
+<span style = "background-color:#dfd">Patient* Clinic::get_patient(string name, string surname) {
+	for (auto patient : patients) {
+		if (patient-&gt;get_name() == name &amp;&amp; patient-&gt;get_surname() == surname) {
+			return patient;</span>
+		}
+<span style = "background-color:#dfd">	}
+	cout &lt;&lt; "Òàêîãî ïàöèåíòà íåò" &lt;&lt; endl;
+	return nullptr;
+}</span>
+
+<span style = "background-color:#dfd">Room* Clinic::get_room(string specialization) {
+	for (auto room : rooms) {
+		if (room-&gt;get_specialization() == specialization) {
+			return room;</span>
+		}
+<span style = "background-color:#dfd">	}</span>
+<span style = "background-color:#fdd">	cout &lt;&lt; "Òàêîãî êàáèíåòà íåò" &lt;&lt; endl;
+	return nullptr;</span>
+<span style = "background-color:#dfd">}</span>
+
+<span style = "background-color:#dfd">void Clinic::patient_dead(string name, string surname) {
+	for (int i = 0; i &lt; patients.size(); ++i) {
+		if (patients[i]-&gt;get_name() == name &amp;&amp; patients[i]-&gt;get_surname() == surname) {</span>
+<span style = "background-color:#fdd">			system("cls");
+			cout &lt;&lt; "Â ñâÿçè ñ òÿæåëûì ñîñòîÿíèåì ïàöèåíò " &lt;&lt; name &lt;&lt; ' ' &lt;&lt; surname &lt;&lt; " óìåð îò " &lt;&lt; patients[i]-&gt;get_disaese() &lt;&lt;endl;               
+			patients.erase(patients.begin() + i); 
+			break;                           </span>
+		}
+<span style = "background-color:#dfd">	}
+}</span>
+
+<span style = "background-color:#dfd">void Clinic::kill() {
+	int i = 0;
+	for (auto pat : patients)</span>
+	{
+<span style = "background-color:#dfd">		for (auto test: pat-&gt;tests) {
+			i++;</span>
+			int k;
+
+<span style = "background-color:#dfd">			if (pat-&gt;vaccin != nullptr) k = 0.2;
+			else k = 1;</span>
+
+<span style = "background-color:#dfd">			if (test-&gt;get_result() == "good") {</span>
+<span style = "background-color:#fdd">				srand(i);
+				if (int(((rand()+1111) % 1000) / k) == 520) {
+					patient_dead(pat-&gt;get_name(), pat-&gt;get_surname());</span>
+				}
+			}
+
+<span style = "background-color:#dfd">			if (test-&gt;get_result() == "normal") {
+				srand(i);
+				if (int(((rand() + 111) % 100) / k) == 65) {</span>
+<span style = "background-color:#fdd">					patient_dead(pat-&gt;get_name(), pat-&gt;get_surname());</span>
+				}
+			}
+
+<span style = "background-color:#dfd">			if (test-&gt;get_result() == "bad") {</span>
+<span style = "background-color:#fdd">				srand(i);
+				if (int(((rand() + 11) % 10) / k) == 5|| int(((rand() + 11) % 10) / k) == 2 || int(((rand() + 11) % 10) / k) == 0) {
+					patient_dead(pat-&gt;get_name(), pat-&gt;get_surname());</span>
+				}
+			}
+<span style = "background-color:#dfd">		}
+	}
+}</span></pre>
+        <hr />
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th align="center">
+                        <small>Generated by</small>
+                        <a href="https://github.com/OpenCppCoverage/OpenCppCoverage/releases">
+                            <strong>OpenCppCoverage (Version: 0.9.9.0)</strong>
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>

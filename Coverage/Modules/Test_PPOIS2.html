@@ -1,0 +1,864 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test_PPOIS2.exe</title>
+        <link rel="stylesheet" type="text/css" href="../third-party/css/style.css"/>
+        <script src="../third-party/RGraph/libraries/RGraph.common.core.js" type="text/javascript"></script>
+        <script src="../third-party/RGraph/libraries/RGraph.common.dynamic.js" type="text/javascript"></script>
+        <script src="../third-party/RGraph/libraries/RGraph.common.tooltips.js" type="text/javascript"></script>
+        <script src="../third-party/RGraph/libraries/RGraph.pie.js" type="text/javascript"></script>
+        <script src="../third-party/JQuery/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            
+            new RGraph.Pie('pi_f1198727-3815-47f3-b400-b685050fe313', [567, 118])
+                .set('labels', ['Cover 82%','Uncover 18%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 567 lines (82%)', 'uncover 118 lines (18%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_ea67de32-c403-4cea-a9fd-6d8e114acba8', [0, 49])
+                .set('labels', ['Cover 0%','Uncover 100%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 0 lines (0%)', 'uncover 49 lines (100%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_6a9a53b0-b387-42f3-a89d-fe2c05efb01e', [0, 3])
+                .set('labels', ['Cover 0%','Uncover 100%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 0 lines (0%)', 'uncover 3 lines (100%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_b67c6260-4080-459d-9e47-946498c87682', [12, 21])
+                .set('labels', ['Cover 36%','Uncover 64%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 12 lines (36%)', 'uncover 21 lines (64%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_c3026f6a-47a2-4fc9-8a91-493ae9a0b5b7', [5, 6])
+                .set('labels', ['Cover 45%','Uncover 55%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 5 lines (45%)', 'uncover 6 lines (55%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_27e7c2a3-310f-4762-a66f-1d6a97478c75', [9, 2])
+                .set('labels', ['Cover 81%','Uncover 19%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 9 lines (81%)', 'uncover 2 lines (19%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_5979a78f-c046-4adc-a0bc-1663e8103e8f', [18, 4])
+                .set('labels', ['Cover 81%','Uncover 19%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 18 lines (81%)', 'uncover 4 lines (19%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_132bee34-c71f-4e94-830b-a3ca80b80297', [96, 17])
+                .set('labels', ['Cover 84%','Uncover 16%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 96 lines (84%)', 'uncover 17 lines (16%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_602061f7-a611-4344-8ee5-94cd7b158fdf', [28, 4])
+                .set('labels', ['Cover 87%','Uncover 13%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 28 lines (87%)', 'uncover 4 lines (13%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_ed2338a6-6d59-46a4-a29a-d207098a0349', [32, 3])
+                .set('labels', ['Cover 91%','Uncover 9%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 32 lines (91%)', 'uncover 3 lines (9%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_14569f87-4919-41c5-afcb-5761084ec306', [14, 1])
+                .set('labels', ['Cover 93%','Uncover 7%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 14 lines (93%)', 'uncover 1 lines (7%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_b44299fd-7033-4aa3-9ba6-ad93beb9ac3d', [194, 8])
+                .set('labels', ['Cover 96%','Uncover 4%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 194 lines (96%)', 'uncover 8 lines (4%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_8764397a-f408-4851-8aa1-5b278dae277b', [22, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 22 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_4971e191-03ce-46a9-88a0-57376ad1ec24', [2, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 2 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_872f7cee-bb2a-42b4-967a-633cd23ce7d5', [6, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 6 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_1e0c9f2f-b2be-4b7b-beed-ba7cfc16b9d0', [1, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 1 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_9e2209cf-3e1c-4bac-a50a-1214130634d0', [4, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 4 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_3d5e568d-cca1-46db-a974-d50ec32f7798', [9, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 9 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_79469c70-52e5-4a27-92c6-756fc3c5fb0f', [1, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 1 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_c4a5ff8f-3360-4ee8-b03d-c1acf00c4125', [7, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 7 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_1eebc63a-a2bd-40ea-b038-5cac4095c89b', [2, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 2 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_94ccc508-fdd0-45c0-8b62-97ea30e815c0', [26, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 26 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_5b3c058a-9b64-4cbf-9b4f-9235ca4abafb', [2, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 2 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_41b80da2-c79a-43d5-af9e-272ff6d0a62b', [11, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 11 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_c3cddf76-4abe-474d-97d8-3a08b36f14a1', [1, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 1 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_ce80a0e2-e0f2-484b-ae97-44d04f1baf1f', [5, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 5 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_324a5d43-9ec3-4fa4-b275-66069b99bb7d', [14, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 14 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_d9896fe5-d3d3-4301-8f9c-120382a9c833', [26, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 26 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_32818d77-47b8-413b-a6e9-c04ad4b60b4c', [1, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 1 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_d88ac148-ca86-4bbe-af2c-c98fd5b6da34', [3, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 3 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_21cdeb3e-ef95-48af-964f-e38f725d0b42', [1, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 1 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_1880734d-6cf2-4d90-845c-21fe31eb5674', [4, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 4 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_4b6dbd23-b169-4257-b0e4-f1bb07496494', [2, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 2 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_69bec1db-7026-41b1-b4d1-4218bfeb592f', [8, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 8 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+            new RGraph.Pie('pi_d9c0876d-c33e-4497-8b48-e90f155bf9ff', [1, 0])
+                .set('labels', ['Cover 100%','Uncover 0%'])
+                .set('colors', ['rgb(0,255,0)','rgb(255,0,0)'])
+                .set('linewidth', 1)
+                .set('shadow', true)
+                .set('tooltips', ['cover 1 lines (100%)', 'uncover 0 lines (0%)'])
+                .set('tooltips.event', 'onmousemove')
+                .set('labels.sticks', true)
+                .set('labels.sticks.length', 10)
+                .draw();
+            
+
+      })
+    </script>    
+        <h1>
+        Test_PPOIS2.exe
+        </h1>
+        <h4>
+        
+        </h4>
+        <table id="rounded-corner">
+            <thead>
+                <tr>
+                    <th scope="col" class="rounded-left">Coverage</th>
+                    <th scope="col">Total lines</th>
+                    <th scope="col" class="rounded-right">Items</th>
+                </tr>
+            </thead> 
+            <tbody>
+                
+                <tr>
+                    <td>
+            <canvas id="pi_f1198727-3815-47f3-b400-b685050fe313" width="280" height="100">Cover 82%</canvas>
+                    </td>            
+                    <td>685</td>
+                    <td>            
+                      
+                      C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\x64\Debug\Test_PPOIS2.exe
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_ea67de32-c403-4cea-a9fd-6d8e114acba8" width="280" height="100">Cover 0%</canvas>
+                    </td>            
+                    <td>49</td>
+                    <td>            
+                       <a href="Test_PPOIS2/gtest-printers.h.html">C:\Users\Илья\source\repos\Test_PPOIS2\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest-printers.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_6a9a53b0-b387-42f3-a89d-fe2c05efb01e" width="280" height="100">Cover 0%</canvas>
+                    </td>            
+                    <td>3</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Registry.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Registry.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_b67c6260-4080-459d-9e47-946498c87682" width="280" height="100">Cover 36%</canvas>
+                    </td>            
+                    <td>33</td>
+                    <td>            
+                       <a href="Test_PPOIS2/gtest.h.html">C:\Users\Илья\source\repos\Test_PPOIS2\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_c3026f6a-47a2-4fc9-8a91-493ae9a0b5b7" width="280" height="100">Cover 45%</canvas>
+                    </td>            
+                    <td>11</td>
+                    <td>            
+                       <a href="Test_PPOIS2/gtest-message.h.html">C:\Users\Илья\source\repos\Test_PPOIS2\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest-message.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_27e7c2a3-310f-4762-a66f-1d6a97478c75" width="280" height="100">Cover 81%</canvas>
+                    </td>            
+                    <td>11</td>
+                    <td>            
+                       <a href="Test_PPOIS2/gtest-port.h.html">C:\Users\Илья\source\repos\Test_PPOIS2\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\internal\gtest-port.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_5979a78f-c046-4adc-a0bc-1663e8103e8f" width="280" height="100">Cover 81%</canvas>
+                    </td>            
+                    <td>22</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Pharmacy.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Pharmacy.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_132bee34-c71f-4e94-830b-a3ca80b80297" width="280" height="100">Cover 84%</canvas>
+                    </td>            
+                    <td>113</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Clinic.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Clinic.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_602061f7-a611-4344-8ee5-94cd7b158fdf" width="280" height="100">Cover 87%</canvas>
+                    </td>            
+                    <td>32</td>
+                    <td>            
+                       <a href="Test_PPOIS2/DateTime.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\DateTime.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_ed2338a6-6d59-46a4-a29a-d207098a0349" width="280" height="100">Cover 91%</canvas>
+                    </td>            
+                    <td>35</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Room.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Room.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_14569f87-4919-41c5-afcb-5761084ec306" width="280" height="100">Cover 93%</canvas>
+                    </td>            
+                    <td>15</td>
+                    <td>            
+                       <a href="Test_PPOIS2/LabTest.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\LabTest.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_b44299fd-7033-4aa3-9ba6-ad93beb9ac3d" width="280" height="100">Cover 96%</canvas>
+                    </td>            
+                    <td>202</td>
+                    <td>            
+                       <a href="Test_PPOIS2/test.cpp.html">C:\Users\Илья\source\repos\Test_PPOIS2\Test_PPOIS2\test.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_8764397a-f408-4851-8aa1-5b278dae277b" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>22</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Doctor.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Doctor.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_4971e191-03ce-46a9-88a0-57376ad1ec24" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>2</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Doctor.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Doctor.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_872f7cee-bb2a-42b4-967a-633cd23ce7d5" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>6</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Employee.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Employee.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_1e0c9f2f-b2be-4b7b-beed-ba7cfc16b9d0" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>1</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Employee.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Employee.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_9e2209cf-3e1c-4bac-a50a-1214130634d0" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>4</td>
+                    <td>            
+                       <a href="Test_PPOIS2/LabTest.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\LabTest.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_3d5e568d-cca1-46db-a974-d50ec32f7798" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>9</td>
+                    <td>            
+                       <a href="Test_PPOIS2/MedicalRecord.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\MedicalRecord.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_79469c70-52e5-4a27-92c6-756fc3c5fb0f" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>1</td>
+                    <td>            
+                       <a href="Test_PPOIS2/MedicalRecord.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\MedicalRecord.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_c4a5ff8f-3360-4ee8-b03d-c1acf00c4125" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>7</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Nurse.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Nurse.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_1eebc63a-a2bd-40ea-b038-5cac4095c89b" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>2</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Nurse.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Nurse.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_94ccc508-fdd0-45c0-8b62-97ea30e815c0" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>26</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Patient.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Patient.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_5b3c058a-9b64-4cbf-9b4f-9235ca4abafb" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>2</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Patient.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Patient.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_41b80da2-c79a-43d5-af9e-272ff6d0a62b" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>11</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Person.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Person.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_c3cddf76-4abe-474d-97d8-3a08b36f14a1" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>1</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Person.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Person.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_ce80a0e2-e0f2-484b-ae97-44d04f1baf1f" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>5</td>
+                    <td>            
+                       <a href="Test_PPOIS2/gtest-internal.h.html">C:\Users\Илья\source\repos\Test_PPOIS2\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\internal\gtest-internal.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_324a5d43-9ec3-4fa4-b275-66069b99bb7d" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>14</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Prescription.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Prescription.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_d9896fe5-d3d3-4301-8f9c-120382a9c833" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>26</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Appointmentcpp.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Appointmentcpp.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_32818d77-47b8-413b-a6e9-c04ad4b60b4c" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>1</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Registry.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Registry.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_d88ac148-ca86-4bbe-af2c-c98fd5b6da34" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>3</td>
+                    <td>            
+                       <a href="Test_PPOIS2/DateTime.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\DateTime.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_21cdeb3e-ef95-48af-964f-e38f725d0b42" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>1</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Room.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Room.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_1880734d-6cf2-4d90-845c-21fe31eb5674" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>4</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Treatment.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Treatment.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_4b6dbd23-b169-4257-b0e4-f1bb07496494" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>2</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Treatment.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Treatment.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_69bec1db-7026-41b1-b4d1-4218bfeb592f" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>8</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Vaccination.cpp.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Vaccination.cpp</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+                <tr>
+                    <td>
+            <canvas id="pi_d9c0876d-c33e-4497-8b48-e90f155bf9ff" width="280" height="100">Cover 100%</canvas>
+                    </td>            
+                    <td>1</td>
+                    <td>            
+                       <a href="Test_PPOIS2/Vaccination.h.html">C:\Всячина\БГУИР\Курс 2\ППОИС\Ппоис 2\PPOIS2\Vaccination.h</a> 
+                      
+                      
+                    </td>
+                </tr>        
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                <td colspan="2" class="rounded-foot-left"></td>
+                <td class="rounded-foot-right"></td>
+                </tr>
+            </tfoot>            
+        </table>
+        <hr/>
+        <table width="100%" >
+         <thead>
+            <tr>
+               <th align="center">
+                  <small>Generated by</small>
+                  <a href="https://github.com/OpenCppCoverage/OpenCppCoverage/releases">
+                     <strong>OpenCppCoverage (Version: 0.9.9.0)</strong>
+                  </a>
+               </th>
+            </tr>
+         </thead>
+        </table>
+    </body>
+</html>

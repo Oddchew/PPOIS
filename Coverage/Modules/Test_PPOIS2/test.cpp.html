@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta charset="utf-8"/>
+	    <title>test.cpp</title>
+	    <link href="../../third-party/google-code-prettify/prettify-CppCoverage.css" type="text/css" rel="stylesheet" />
+	    <script type="text/javascript" src="../../third-party/google-code-prettify/prettify.js"></script>
+	</head>
+    <body onload="prettyPrint()">
+        <h4></h4>
+        <pre class="prettyprint lang-cpp linenums">
+#include "pch.h"
+#include "Clinic.h"
+#include &lt;fstream&gt;
+
+<span style = "background-color:#dfd">Clinic A("Ïîëèêëèíèêà ãîðîäà Ìèíñêà ¹1", "Èâàíîâà", "Åëåíà", 44, 3290.35, "Çèíàèäà", "Åôèìåö", 58, 1293);
+string path = "C:/Âñÿ÷èíà/ÁÃÓÈÐ/Êóðñ 2/ÏÏÎÈÑ/Ïïîèñ 2/Ïïîèñ 2/pharm.p";
+ifstream fin(path);</span>
+
+<span style = "background-color:#dfd">string name;</span>
+double price;
+
+<span style = "background-color:#dfd">TEST(PharmacyTest, DrugsInfo) {
+	while (fin &gt;&gt; name &gt;&gt; price) {</span>
+<span style = "background-color:#fdd">		A.pharm-&gt;add_drug(price, name);
+	}</span>
+<span style = "background-color:#dfd">	while (fin &gt;&gt; name &gt;&gt; price) {</span>
+<span style = "background-color:#fdd">		double price_ = A.pharm-&gt;get_drug(name);
+		EXPECT_EQ(price, price_);
+	}</span>
+<span style = "background-color:#dfd">	system("chcp 1251&gt;nul");
+	EXPECT_NO_THROW(A.pharm-&gt;info());
+}</span>
+
+<span style = "background-color:#dfd">Doctor B1("Àëåêñàíäð", "Àâñåéêîâ", 28, 2395.35, "Õèðóðã"), B2("Ñâåòëàíà", "Èãíàòüåâà", 38, 1855.35, "Íåâðîëîã");</span>
+
+<span style = "background-color:#dfd">Nurse C1("Îëüãà", "Âîëêîâà", 28, 1034.4, "õèðóðãèÿ"), C2("Åëåíà", "Àíòàïîâà", 32, 1034.4, "Íåâðîëîãèÿ");</span>
+
+<span style = "background-color:#dfd">Room D1("Êàáèíåò õèðóðãà", "õèðóðãè÷åñêèé ñòîë"), D2("Êàáèíåò íåâðîëîãà", "íåâðîëîãè÷åñêèé ìîëîòî÷åê");</span>
+
+<span style = "background-color:#dfd">Patient E1("Âåðîíèêà", "Ëóêèíà", 20, "àïïåíäèöèò"), E2("Àëåêñåé", "Ìàëüöåâ", 31, "âíóòðåííèé ïåðåëîì ëó÷åâîé êîñòè");</span>
+
+
+<span style = "background-color:#dfd">TEST(DoctorTest, NameSurname_return) {
+	A.add_doctor(&amp;B1);
+	A.add_doctor(&amp;B2);</span>
+
+<span style = "background-color:#dfd">    EXPECT_EQ(B1.get_name(), "Àëåêñàíäð");
+	EXPECT_EQ(B2.get_name(), "Ñâåòëàíà");</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(B1.get_surname(), "Àâñåéêîâ");
+	EXPECT_EQ(B2.get_surname(), "Èãíàòüåâà");</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(A.get_doctor("Àëåêñàíäð", "Àâñåéêîâ"), &amp;B1);
+	EXPECT_EQ(A.get_doctor("Ñâåòëàíà", "Èãíàòüåâà"), &amp;B2);
+}</span>
+
+<span style = "background-color:#dfd">TEST(NurseTest, NameSurname_return) {
+	A.add_nurse(&amp;C1);
+	A.add_nurse(&amp;C2);</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(C1.get_name(), "Îëüãà");
+	EXPECT_EQ(C2.get_name(), "Åëåíà");</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(C1.get_surname(), "Âîëêîâà");
+	EXPECT_EQ(C2.get_surname(), "Àíòàïîâà");
+}</span>
+
+<span style = "background-color:#dfd">TEST(RoomTest, Specialization_return) {
+	A.add_room(&amp;D1);
+	A.add_room(&amp;D2);</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(D1.get_specialization(), "Êàáèíåò õèðóðãà");
+	EXPECT_EQ(D2.get_specialization(), "Êàáèíåò íåâðîëîãà");</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(A.get_room("Êàáèíåò õèðóðãà"), &amp;D1);
+	EXPECT_EQ(A.get_room("Êàáèíåò íåâðîëîãà"), &amp;D2);
+}</span>
+
+<span style = "background-color:#dfd">TEST(PatientTest, NameSurnameDisease_return) {
+	A.add_patient(&amp;E1);
+	A.add_patient(&amp;E2);</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(E1.get_name(), "Âåðîíèêà");
+	EXPECT_EQ(E2.get_name(), "Àëåêñåé");</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(E1.get_surname(), "Ëóêèíà");
+	EXPECT_EQ(E2.get_surname(), "Ìàëüöåâ");</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(E1.get_disaese(), "àïïåíäèöèò");
+	EXPECT_EQ(E2.get_disaese(), "âíóòðåííèé ïåðåëîì ëó÷åâîé êîñòè");</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(A.get_patient("Âåðîíèêà", "Ëóêèíà"), &amp;E1);
+	EXPECT_EQ(A.get_patient("Àëåêñåé", "Ìàëüöåâ"), &amp;E2);
+}</span>
+
+<span style = "background-color:#dfd">DateTime time1(21, 12, 2024, 13, 20);
+DateTime time2(3, 5, 2025, 9, 0);</span>
+
+<span style = "background-color:#dfd">TEST(DateTimeTest, construct) {
+	EXPECT_EQ(time1.day, 21);
+	EXPECT_EQ(time1.month, 12);
+	EXPECT_EQ(time1.year, 2024);
+	EXPECT_EQ(time1.hour, 13);
+	EXPECT_EQ(time1.minute, 20);</span>
+
+<span style = "background-color:#dfd">	EXPECT_EQ(time2.day, 3);
+	EXPECT_EQ(time2.month, 5);
+	EXPECT_EQ(time2.year, 2025);
+	EXPECT_EQ(time2.hour, 9);
+	EXPECT_EQ(time2.minute, 0);
+}</span>
+
+<span style = "background-color:#dfd">TEST(AppointmentTest, Construct){
+	Appointment *App = new Appointment(&amp;B1, &amp;E1, &amp;D1, &amp;time1);
+	EXPECT_NE(&amp;App, nullptr);
+}</span>
+
+<span style = "background-color:#dfd">TEST(LabTests, Construct) {
+	LabTest test("óðîâåíü ãëþêîçû â êðîâè",&amp;time2);
+	string const str1 = "normal", str2 = "bad", str3 = "good";
+	EXPECT_TRUE(test.get_result() == str1|| test.get_result() == str2|| test.get_result() == str3);
+}</span>
+
+<span style = "background-color:#dfd">TEST(MedicalRecordTest, Construct) {
+	MedicalRecord* rec = new MedicalRecord(&amp;E1);
+	EXPECT_NE(&amp;rec, nullptr);
+}</span>
+
+<span style = "background-color:#dfd">TEST(PrescriptionTest, add_prescription) {
+	Prescription prescr;
+	prescr.add_prescription(&amp;B2, &amp;E2, "Ëèîôóðèë");
+	EXPECT_EQ(prescr.name_of_med, "Ëèîôóðèë");
+}</span>
+
+<span style = "background-color:#dfd">TEST(ClinicTest, AddNurseAndShow) {
+	A.add_nurse(&amp;C1);
+	system("chcp 1251&gt;nul");
+	EXPECT_NO_THROW(C1.info());
+}</span>
+
+<span style = "background-color:#dfd">TEST(PharmacyTest, AddDrugTwice) {
+	A.pharm-&gt;add_drug(10.0, "Àñïèðèí");
+	A.pharm-&gt;add_drug(10.0, "Àñïèðèí"); 
+	EXPECT_EQ(A.pharm-&gt;get_drug("Àñïèðèí"), 10.0); 
+}</span>
+
+<span style = "background-color:#dfd">TEST(DoctorTest, AddSamePatientMultipleTimes) {
+	A.add_doctor(&amp;B1);
+	B1.add_patient(&amp;E1, &amp;A);
+	EXPECT_NO_THROW(B1.add_patient(&amp;E1, &amp;A)); 
+}</span>
+
+<span style = "background-color:#dfd">TEST(RoomTest, CheckNonExistentEquipment) {
+	EXPECT_FALSE(D1.exist_equipment("ðåíòãåíîâñêèé àïïàðàò")); 
+}</span>
+
+<span style = "background-color:#dfd">TEST(AppointmentTest, CancelAppointment) {
+	Appointment* app = new Appointment(&amp;B1, &amp;E1, &amp;D1, &amp;time1);
+	for (auto app : A.appointments) {</span>
+<span style = "background-color:#fdd">		EXPECT_NO_THROW(app-&gt;cancel());
+		EXPECT_NO_THROW(app-&gt;info());
+	}</span>
+<span style = "background-color:#dfd">}</span>
+
+<span style = "background-color:#dfd">TEST(LabTest, LabTestResultConsistencyInfo) {
+	LabTest test("óðîâåíü ãëþêîçû â êðîâè", &amp;time2);
+	system("chcp 1251&gt;nul");
+	string result1 = test.get_result();
+	string result2 = test.get_result(); 
+	EXPECT_NO_THROW(test.info());
+	EXPECT_EQ(result1, result2); 
+}</span>
+
+<span style = "background-color:#dfd">TEST(MedicalRecordTest, RetrieveRecordByPatient) {
+	MedicalRecord rec(&amp;E1);
+	rec.add_rec("Ïåðâè÷íûé îñìîòð");
+	EXPECT_NO_THROW(rec.check_history()); 
+}</span>
+
+<span style = "background-color:#dfd">TEST(PrescriptionTest, VerifyDoctorInPrescription) {
+	Prescription prescr;
+	prescr.add_prescription(&amp;B1, &amp;E1, "Ëèîôóðèë");
+	EXPECT_NO_THROW(prescr.show());
+}</span>
+
+<span style = "background-color:#dfd">TEST(AppointmentTest, CancelAndInfo) {
+	Appointment* app = new Appointment(&amp;B1, &amp;E1, &amp;D1, &amp;time1);
+	D1.add_working_doc(&amp;B1);
+	system("chcp 1251&gt;nul");</span>
+
+<span style = "background-color:#dfd">	EXPECT_NO_THROW(app-&gt;info());</span>
+
+<span style = "background-color:#dfd">	app-&gt;cancel(); 
+	EXPECT_NO_THROW(app-&gt;info()); 
+}</span>
+
+<span style = "background-color:#dfd">TEST(DoctorTest, ShowAllPAtient) {
+	B1.add_patient(&amp;E1, &amp;A);
+	B1.add_patient(&amp;E2, &amp;A);
+	B2.add_patient(&amp;E1);
+	EXPECT_NO_THROW(B1.show_patients());
+	EXPECT_NO_THROW(B2.show_patients());
+}
+TEST(ClinicTest, Shows) {
+	system("chcp 1251&gt;nul");
+	D1.add_working_doc(&amp;B1);
+	D1.add_nurse(&amp;C1);
+	D2.add_working_doc(&amp;B2);
+	D2.add_nurse(&amp;C2);
+	Appointment* app = new Appointment(&amp;B1, &amp;E1, &amp;D1, &amp;time1);
+	A.appointments.push_back(app);
+	EXPECT_NO_THROW(A.show_all_appointments());
+	EXPECT_NO_THROW(A.show_all_doctors());
+	EXPECT_NO_THROW(A.show_all_nurses());
+	EXPECT_NO_THROW(A.show_all_patients());
+	EXPECT_NO_THROW(A.show_all_prescriptions());
+	EXPECT_NO_THROW(A.show_all_rooms());
+}</span>
+
+<span style = "background-color:#dfd">TEST(VacinationTest, Info) {</span>
+	system("chcp 1251&gt;nul");
+<span style = "background-color:#dfd">	Vaccination vac("Âàêöèíà îò covid 19", &amp;time1, &amp;B1);
+	EXPECT_NO_THROW(vac.info());
+}</span>
+
+<span style = "background-color:#dfd">TEST(TreatmentTest, Info) {
+	system("chcp 1251&gt;nul");
+	Treatment treat("Åñòü çäîðîâóþ ïèùó", INT_MAX - 1);
+	EXPECT_NO_THROW(treat.info());</span>
+}
+<span style = "background-color:#dfd">
+TEST(ClinicTest, Kill) {
+	Patient E24("Âèêòîðèÿ", "Ìåëüíèêîâà", 16, "êàðèåñ");
+	EXPECT_NO_THROW(A.patient_dead("Âèêòîðèÿ", "Ìåëüíèêîâà"));
+	EXPECT_NE(A.get_patient("Âåðîíèêà", "Ìåëüíèêîâà"), &amp;E24);
+	LabTest* test = new LabTest("Óðîâåíü ýðèòðîöèòîâ â êðîâè", &amp;time1);
+	E1.tests.push_back(test);
+	EXPECT_NO_THROW(A.kill());</span>
+}
+<span style = "background-color:#dfd">
+TEST(DateTimeTest, SetDateTime) {
+	system("chcp 1251&gt;nul");
+	DateTime* time21 = new DateTime();</span>
+	EXPECT_NO_THROW(time21-&gt;set_date_time());
+<span style = "background-color:#dfd">}
+
+TEST(EmployeeTest, InfoGetNameSurname) {
+	system("chcp 1251&gt;nul");
+	Employee emp("Åâãåíèé", "Çàéöåâ", 23, 1203.53);
+	EXPECT_NO_THROW(emp.info());</span>
+	EXPECT_EQ(emp.get_name(), "Åâãåíèé");
+<span style = "background-color:#dfd">	EXPECT_EQ(emp.get_surname(), "Çàéöåâ");
+}
+
+TEST(PersonTest, InfoGetNameSurname) {
+	system("chcp 1251&gt;nul");
+	Person emp("Åëåíà", "Ëîãâèíîâà", 23);</span>
+	EXPECT_NO_THROW(emp.info());
+<span style = "background-color:#dfd">	EXPECT_EQ(emp.get_name(), "Åëåíà");
+	EXPECT_EQ(emp.get_surname(), "Ëîãâèíîâà");
+}
+
+TEST(PatienTest, TreatShowDoctors) {
+	system("chcp 1251&gt;nul");
+	E1.add_doctor(&amp;B1);
+	E1.add_doctor(&amp;B2);</span>
+	EXPECT_NO_THROW(E1.show_doctors());
+	EXPECT_EQ(E1.treat, nullptr);
+	E1.add_treat("Ïðèéòè íà îïåðàöèþ ïî óäàëåíèþ àïïåíäèêñà", 1);
+	EXPECT_NO_THROW(E1.treat-&gt;info());
+}
+
+TEST(RegistryTest, AddRecord) {
+	Registry reg("Àíàñòàñèÿ", "Äåìèíà",36,1521.43);
+	MedicalRecord rec(&amp;E1);
+	rec.add_rec("Ïåðâè÷íûé îñìîòð");
+	EXPECT_NO_THROW(reg.add_record(&amp;rec));
+}</pre>
+        <hr />
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th align="center">
+                        <small>Generated by</small>
+                        <a href="https://github.com/OpenCppCoverage/OpenCppCoverage/releases">
+                            <strong>OpenCppCoverage (Version: 0.9.9.0)</strong>
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>
