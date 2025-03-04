@@ -1,0 +1,62 @@
+{
+    "Microsoft Office": {
+        "name": "Microsoft Office",
+        "category": "Productivity",
+        "size": "5GB",
+        "rating": 4.3
+    },
+    "VLC Media Player": {
+        "name": "VLC Media Player",
+        "category": "Media",
+        "size": "150MB",
+        "rating": 4.9
+    },
+    "Notepad++": {
+        "name": "Notepad++",
+        "category": "Text Editor",
+        "size": "10MB",
+        "rating": 4.7
+    },
+    "Zoom": {
+        "name": "Zoom",
+        "category": "Video Conferencing",
+        "size": "300MB",
+        "rating": 4.6
+    },
+    "Google Chrome": {
+        "name": "Google Chrome",
+        "category": "Browser",
+        "size": "200MB",
+        "rating": 4.7
+    },
+    "Spotify": {
+        "name": "Spotify",
+        "category": "Music",
+        "size": "500MB",
+        "rating": 4.5
+    },
+    "Slack": {
+        "name": "Slack",
+        "category": "Communication",
+        "size": "250MB",
+        "rating": 4.4
+    },
+    "Visual Studio Code": {
+        "name": "Visual Studio Code",
+        "category": "IDE",
+        "size": "150MB",
+        "rating": 4.8
+    },
+    "Minecraft": {
+        "name": "Minecraft",
+        "category": "Game",
+        "size": "1.5GB",
+        "rating": 4.8
+    },
+    "Adobe Photoshop": {
+        "name": "Adobe Photoshop",
+        "category": "Design",
+        "size": "2GB",
+        "rating": 4.5
+    }
+}

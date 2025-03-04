@@ -1,0 +1,102 @@
+@startuml computer_simulator
+
+class Computer {
+  + cpu: CPU
+  + hardDrive: HardDrive
+  + ram: Ram
+  + keyboard: Keyboard
+  + mouse: Mouse
+  + mouse_capture(monitor: Monitor)
+  + install_os(os_name: str)
+  + turn(monitor: Monitor)
+}
+
+class CPU {
+  + freq: int
+  + install_app()
+  + update_OS(hardDrive: HardDrive)
+}
+
+class HardDrive {
+  + type: str
+  + capacity: int
+  + files: dict
+  + OS: dict
+  + save()
+}
+
+class Ram {
+  + load_data(data: dict)
+  + clear()
+}
+
+class Keyboard {
+  + keys: List<Key>
+  + status: bool
+  + press_key(key_label: str)
+  + release_key(key_label: str)
+  + release_all()
+  + display(stdscr)
+}
+
+class Key {
+  + label: str
+  + pressed: bool
+  + press()
+  + release()
+  + get_display_label(): str
+}
+
+class Mouse {
+  + status: bool
+  + left_button: Key
+  + right_button: Key
+  + middle_button: Key
+  + position: tuple
+  + move(x: int, y: int)
+  + click_left()
+  + click_right()
+  + click_middle()
+  + release_all()
+  + draw_mouse(stdscr, pos_x: int, pos_y: int)
+  + get_picture(): List<str>
+}
+
+class Monitor {
+  + resolution: int
+  + refresh_rate: int
+  + status: bool
+  + display()
+}
+
+class Interface {
+  + choosed_el: int
+  + n: int
+  + x: int
+  + y: int
+  + update(key: str)
+  + display(stdscr, fields: List<str>)
+}
+
+class Videocard{
+  + turn()
+}
+
+Computer "1" *-- "1" CPU
+Computer "1" *-- "1" HardDrive
+Computer "1" *-- "1" Ram
+Computer "1" *-- "1" Keyboard
+Computer "1" *-- "1" Mouse
+Computer "1" *-- "1" Videocard
+
+Keyboard "1" *-- "*" Key
+Mouse "1" *-- "1" Key : left_button
+Mouse "1" *-- "1" Key : right_button
+Mouse "1" *-- "1" Key : middle_button
+
+Computer ..> Interface : uses for navigation
+Computer ..>  Monitor : mouse_capture()
+Computer ..>  Monitor : turn()
+CPU ..> HardDrive : update_OS()
+
+@enduml

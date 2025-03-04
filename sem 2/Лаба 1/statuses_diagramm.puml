@@ -1,0 +1,39 @@
+@startuml computer_simulator_state_diagram
+
+[*] --> PowerOff : Система выключена
+
+PowerOff --> Booting : Включение компьютера
+
+Booting --> ComputerRunning : Успешный запуск системы
+
+ComputerRunning --> PeripheralSetup : Настройка периферии
+ComputerRunning --> InterfaceMenu : Управление через интерфейс
+ComputerRunning --> Shutdown : Выключение системы
+
+state PeripheralSetup {
+    state KeyboardIdle : Ожидание ввода
+    state MouseIdle : Ожидание движения
+    state MonitorOff : Монитор выключен
+
+    KeyboardIdle --> KeyboardActive : Нажатие клавиши
+    KeyboardActive --> KeyboardIdle : Отпускание клавиши
+    MouseIdle --> MouseActive : Перемещение или клик
+    MouseActive --> MouseIdle : Завершение действия
+    MonitorOff --> MonitorOn : Включение монитора
+    MonitorOn --> MonitorOff : Выключение монитора
+}
+
+state InterfaceMenu {
+    state MainMenu : Главное меню
+    state InstallOS : Установка ОС
+    state DeviceManagement : Управление устройствами
+
+    MainMenu --> InstallOS : Выбор установки ОС
+    MainMenu --> DeviceManagement : Выбор управления устройствами
+    InstallOS --> MainMenu : Завершение установки
+    DeviceManagement --> MainMenu : Завершение настройки
+}
+
+Shutdown --> PowerOff : Система выключена
+
+@enduml
