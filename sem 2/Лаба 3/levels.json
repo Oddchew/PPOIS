@@ -1,0 +1,206 @@
+{
+  "levels": [
+    {
+      "blocks": [
+        {"x": 180, "y": 50, "color": [255, 0, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 240, "y": 50, "color": [255, 0, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 300, "y": 50, "color": [255, 0, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 360, "y": 50, "color": [255, 0, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 420, "y": 50, "color": [255, 0, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 480, "y": 50, "color": [255, 0, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 540, "y": 50, "color": [255, 0, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 600, "y": 50, "color": [255, 0, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 660, "y": 50, "color": [255, 0, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 720, "y": 50, "color": [255, 0, 0], "hits": 1, "texture": "Block.png"},
+
+        {"x": 180, "y": 90, "color": [0, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 240, "y": 90, "color": [0, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 300, "y": 90, "color": [0, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 360, "y": 90, "color": [0, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 420, "y": 90, "color": [0, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 480, "y": 90, "color": [0, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 540, "y": 90, "color": [0, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 600, "y": 90, "color": [0, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 660, "y": 90, "color": [0, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 720, "y": 90, "color": [0, 255, 0], "hits": 1, "texture": "Block.png"},
+
+        {"x": 180, "y": 130, "color": [0, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 240, "y": 130, "color": [0, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 300, "y": 130, "color": [0, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 360, "y": 130, "color": [0, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 420, "y": 130, "color": [0, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 480, "y": 130, "color": [0, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 540, "y": 130, "color": [0, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 600, "y": 130, "color": [0, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 660, "y": 130, "color": [0, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 720, "y": 130, "color": [0, 0, 255], "hits": 1, "texture": "Block.png"}
+      ]
+    },
+    {
+      "blocks": [
+        {"x": 60, "y": 100, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 120, "y": 60, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 180, "y": 100, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 240, "y": 140, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 300, "y": 180, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 360, "y": 220, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 420, "y": 180, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 480, "y": 140, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 540, "y": 100, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 600, "y": 60, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 660, "y": 100, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 720, "y": 140, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 780, "y": 180, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 840, "y": 220, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 900, "y": 180, "color": [255, 255, 0], "hits": 1, "texture": "Block.png"}
+      ]
+    },
+    {
+      "blocks": [
+        {"x": 360, "y": 60, "color": [255, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 420, "y": 60, "color": [255, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 480, "y": 60, "color": [255, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 540, "y": 60, "color": [255, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 600, "y": 60, "color": [255, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 480, "y": 100, "color": [225, 225, 225], "hits": 1, "texture": "Block.png"},
+        {"x": 420, "y": 140, "color": [0, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 540, "y": 140, "color": [0, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 360, "y": 180, "color": [255, 128, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 600, "y": 180, "color": [255, 128, 255], "hits": 1, "texture": "Block.png"}
+      ]
+    },
+    {
+      "blocks": [
+        {"x": 180, "y": 60, "color": [128, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 240, "y": 60, "color": [128, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 300, "y": 60, "color": [128, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 360, "y": 60, "color": [128, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 420, "y": 60, "color": [128, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 480, "y": 60, "color": [128, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 540, "y": 60, "color": [128, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 600, "y": 60, "color": [128, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 660, "y": 60, "color": [128, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 720, "y": 60, "color": [128, 128, 128], "hits": 2, "texture": "Block1.png"}
+      ]
+    },
+    {
+      "blocks": [
+        {"x": 360, "y": 60, "color": [255, 128, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 420, "y": 60, "color": [255, 128, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 480, "y": 60, "color": [255, 128, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 540, "y": 60, "color": [255, 128, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 600, "y": 60, "color": [255, 128, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 660, "y": 60, "color": [255, 128, 0], "hits": 1, "texture": "Block.png"},
+        {"x": 420, "y": 100, "color": [0, 255, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 480, "y": 100, "color": [0, 255, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 540, "y": 100, "color": [0, 255, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 600, "y": 100, "color": [0, 255, 128], "hits": 2, "texture": "Block1.png"}
+      ]
+    },
+    {
+      "blocks": [
+        {"x": 300, "y": 60, "color": [0, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 420, "y": 60, "color": [0, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 540, "y": 60, "color": [0, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 660, "y": 60, "color": [0, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 720, "y": 60, "color": [0, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 300, "y": 100, "color": [255, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 420, "y": 100, "color": [255, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 540, "y": 100, "color": [255, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 660, "y": 100, "color": [255, 128, 128], "hits": 2, "texture": "Block1.png"},
+        {"x": 720, "y": 100, "color": [255, 128, 128], "hits": 2, "texture": "Block1.png"}
+      ]
+    },
+    {
+      "blocks": [
+        {"x": 300, "y": 60, "color": [128, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 360, "y": 60, "color": [128, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 420, "y": 60, "color": [128, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 480, "y": 60, "color": [128, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 540, "y": 60, "color": [128, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 600, "y": 60, "color": [128, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 660, "y": 60, "color": [128, 0, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 720, "y": 60, "color": [128, 0, 255], "hits": 1, "texture": "Block.png"}
+      ]
+    },
+    {
+      "blocks": [
+        {"x": 300, "y": 60, "color": [255, 128, 255], "hits": 2, "texture": "Block1.png"},
+        {"x": 360, "y": 60, "color": [255, 128, 255], "hits": 2, "texture": "Block1.png"},
+        {"x": 420, "y": 60, "color": [255, 128, 255], "hits": 2, "texture": "Block1.png"},
+        {"x": 480, "y": 60, "color": [255, 128, 255], "hits": 2, "texture": "Block1.png"},
+        {"x": 540, "y": 60, "color": [255, 128, 255], "hits": 2, "texture": "Block1.png"},
+        {"x": 600, "y": 60, "color": [255, 128, 255], "hits": 2, "texture": "Block1.png"},
+        {"x": 660, "y": 60, "color": [255, 128, 255], "hits": 2, "texture": "Block1.png"},
+        {"x": 720, "y": 60, "color": [255, 128, 255], "hits": 2, "texture": "Block1.png"},
+        {"x": 420, "y": 100, "color": [0, 255, 128], "hits": 1, "texture": "Block.png"},
+        {"x": 480, "y": 100, "color": [0, 255, 128], "hits": 1, "texture": "Block.png"}
+      ]
+    },
+    {
+      "blocks": [
+        {"x": 420, "y": 60, "color": [255, 255, 128], "hits": 3, "texture": "Block2.png"},
+        {"x": 480, "y": 60, "color": [255, 255, 128], "hits": 3, "texture": "Block2.png"},
+        {"x": 540, "y": 60, "color": [255, 255, 128], "hits": 3, "texture": "Block2.png"},
+        {"x": 600, "y": 60, "color": [255, 255, 128], "hits": 3, "texture": "Block2.png"},
+        {"x": 660, "y": 60, "color": [255, 255, 128], "hits": 3, "texture": "Block2.png"},
+        {"x": 420, "y": 100, "color": [255, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 480, "y": 100, "color": [255, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 540, "y": 100, "color": [255, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 600, "y": 100, "color": [255, 255, 255], "hits": 1, "texture": "Block.png"},
+        {"x": 660, "y": 100, "color": [255, 255, 255], "hits": 1, "texture": "Block.png"}
+      ]
+    },
+    {
+      "blocks": [
+        {"x": 180, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 240, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 300, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 360, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 420, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 480, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 540, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 600, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 660, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 720, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 780, "y": 50, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+
+        {"x": 180, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 240, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 300, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 360, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 420, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 480, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 540, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 600, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 660, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 720, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 780, "y": 90, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+
+        {"x": 180, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 240, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 300, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 360, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 420, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 480, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 540, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 600, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 660, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 720, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 780, "y": 130, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+
+        {"x": 180, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 240, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 300, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 360, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 420, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 480, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 540, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 600, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 660, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 720, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"},
+        {"x": 780, "y": 170, "color": [0, 255, 0], "hits": 4, "texture": "Block3.png"}
+      ]
+    }
+  ]
+}
